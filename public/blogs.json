@@ -1,0 +1,42 @@
+[
+    {
+        "id":1,
+        "title": "Why is the EventLoop for Browsers and Node.js Designed This Way?",
+        "thumbnail": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*G-LmVEGXlj-UqyARy7wNjg.png",
+        "avatar": "https://miro.medium.com/v2/resize:fill:176:176/0*m32qfh12g0oZmh7w",
+        "author": "CodeHero",
+        "published_in": "Feb 22, 2022",
+        "read_time": 9,
+        "link":"https://blog.bitsrc.io/why-is-the-eventloop-for-browsers-and-node-js-designed-this-way-f7f794696c"
+    },
+    {
+        "id":2,
+        "title": "GPT-4: The Bitterer Lesson",
+        "thumbnail": "https://miro.medium.com/v2/resize:fit:1100/format:webp/0*qsiwRm7oNZ9YQxrt.png",
+        "avatar": "https://miro.medium.com/v2/resize:fill:132:132/2*oMdIZBsnK8EFhQLUaAB5ZA.jpeg",
+        "author": "Alberto Romero",
+        "published_in": "Mar 29, 2023",
+        "read_time": 5,
+        "link":"https://medium.com/@albertoromgar/gpt-4-the-bitterer-lesson-79d09843b66"
+    },
+    {
+        "id":3,
+        "title": "The Voyager 1 probe has started sending strange information from outside the solar system — What’s going on?",
+        "thumbnail": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*SWn6maBUbgSbqNBOx6J9OA.jpeg",
+        "avatar": "https://miro.medium.com/v2/resize:fill:96:96/1*nSrpVn6XSacqEvqmeL8UZA.jpeg",
+        "author": "Dark Energy Articles",
+        "published_in": "May 24, 2022",
+        "read_time": 4,
+        "link":"https://medium.com/@darkenergyarticles/the-voyager-1-probe-has-started-sending-strange-information-from-outside-the-solar-system-whats-719107ab80ab"
+    },
+    {
+        "id":4,
+        "title": "Is GPT-3 a Breeding Pool for Plagiarism? Or Are We Just Overreacting?",
+        "thumbnail": "https://miro.medium.com/v2/resize:fit:1100/1*u5fAHlG_IjhNNOyRQlvx-w.gif",
+        "avatar": "https://miro.medium.com/v2/resize:fill:72:72/1*1Q8g3oBHXMq1PQyZ-IBy9w@2x.jpeg",
+        "author": "Aphinya Dechalert",
+        "published_in": "Mar 3, 2023",
+        "read_time": 8,
+        "link":"https://betterprogramming.pub/is-gpt-3-a-breeding-pool-for-plagiarism-or-are-we-just-overreacting-be5657036f0b"
+    }
+]
