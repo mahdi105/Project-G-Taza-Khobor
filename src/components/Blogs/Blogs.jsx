@@ -3,6 +3,7 @@ import Blog from '../Blog/Blog';
 import Sidebar from '../Sidebar/Sidebar';
 import { toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import Gyan from '../Gyan/Gyan';
 
 const Blogs = () => {
     // USE STATE Hook
@@ -36,13 +37,16 @@ const Blogs = () => {
         .then(data => setBlogs(data));
     },[]);
     return (
-        <main className='px-2 xl:px-10 container mx-auto grid grid-cols-1 md:grid-cols-11 gap-7'>
-            <section className='md:col-span-7'>
-                {
-                    blogs.map((blog) => <Blog handleReadTime={handleReadTime} blog={blog} key={blog.id} handleBookmark={handleBookmark}></Blog>)
-                }
+        <main className='px-2 xl:px-10 container mx-auto'>
+            <section className='grid grid-cols-1 md:grid-cols-11 gap-7'>
+                <section className='md:col-span-7'>
+                    {
+                        blogs.map((blog) => <Blog handleReadTime={handleReadTime} blog={blog} key={blog.id} handleBookmark={handleBookmark}></Blog>)
+                    }
+                </section>
+                <Sidebar bookmarks={bookmarks} readTime={readTime}></Sidebar>
             </section>
-            <Sidebar bookmarks={bookmarks} readTime={readTime}></Sidebar>
+            <Gyan></Gyan>
         </main>
     );
 };
