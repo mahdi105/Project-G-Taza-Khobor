@@ -31,7 +31,7 @@ const Blog = (props) => {
                 <h1 className='mb-5 text-4xl font-bold text-cyan-950'>{title}</h1>
                 <div className='flex justify-start gap-5 mb-9'>
                     <button className='underline decoration-solid text-[#6047EC] text-xl font-semibold'>Mark as read</button>
-                    <button className=' bg-cyan-950 text-xl font-semibold rounded-md py-2 px-3 text-white'>Read More...
+                    <button className=' bg-cyan-700 text-xl font-semibold rounded-md py-2 px-3 text-white'>Read More...
                     </button>
                 </div>
             </div>

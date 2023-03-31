@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Blog from '../Blog/Blog';
+import Sidebar from '../Sidebar/Sidebar';
 
 const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
@@ -10,15 +11,13 @@ const Blogs = () => {
         .then(data => setBlogs(data));
     },[]);
     return (
-        <main className='xl:px-10 container mx-auto grid grid-cols-1 md:grid-cols-10 gap-6'>
+        <main className='xl:px-10 container mx-auto grid grid-cols-1 md:grid-cols-11 gap-7'>
             <section className='col-span-7'>
                 {
                     blogs.map((blog) => <Blog blog={blog} key={blog.id}></Blog>)
                 }
             </section>
-            <aside className='col-span-3 bg-slate-100'>
-                <p>Learn From Beginning</p>
-            </aside>
+            <Sidebar></Sidebar>
         </main>
     );
 };
