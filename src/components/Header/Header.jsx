@@ -4,7 +4,7 @@ import './Header.css';
 
 const Header = () => {
     return (
-        <header>
+        <header className='mb-9'>
             <section className='container xl:px-10 py-5 mx-auto flex justify-between items-center border-b border-slate-200'>
                 <h1 className='text-cyan-950 font-bold text-3xl'>Taza Khobor</h1>
                 <div className='flex justify-end gap-20 items-center'>
