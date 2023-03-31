@@ -9,9 +9,9 @@ const Header = () => {
                 <h1 className='text-cyan-950 font-bold text-3xl'>Taza Khobor</h1>
                 <div className='flex justify-end gap-20 items-center'>
                     <div className='flex justify-end items-center gap-6 text-cyan-950 text-lg'>
-                        <a href="" className='hover:text-rose-600'>E-potrika</a>
-                        <a href="" className='hover:text-rose-600'>Live show</a>
-                        <a href="" className='hover:text-rose-600'>Login</a>
+                        <a href="" className='hover:text-purple-600 font-semibold'>E-potrika</a>
+                        <a href="" className='hover:text-purple-600 font-semibold'>Live show</a>
+                        <a href="" className='hover:text-purple-600 font-extrabold'>Login</a>
                     </div>
                     <div>
                         <img id='logo' src={logo} className="w-12 h-12" alt="" />

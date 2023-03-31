@@ -7,7 +7,8 @@ import "react-toastify/dist/ReactToastify.css";
 const Blogs = () => {
     // USE STATE Hook
     const [blogs, setBlogs] = useState([]);
-    const [bookmarks, setBookmarks] = useState([])
+    const [bookmarks, setBookmarks] = useState([]);
+    const [readTime, setReadTime] = useState(0);
     const notify = ()=>{
         toast.warn("Already Bookmarked!", {
             position: toast.POSITION.BOTTOM_RIGHT
@@ -23,6 +24,11 @@ const Blogs = () => {
             notify();
         }
     }
+    const handleReadTime = (time)=>{
+        const newReadTime = readTime + time;
+        setReadTime(newReadTime)
+    }
+    console.log("Read Time One",readTime);
     // USE EFFECT Hook
     useEffect(()=>{
         fetch('blogs.json')
@@ -33,10 +39,10 @@ const Blogs = () => {
         <main className='xl:px-10 container mx-auto grid grid-cols-1 md:grid-cols-11 gap-7'>
             <section className='col-span-7'>
                 {
-                    blogs.map((blog) => <Blog blog={blog} key={blog.id} handleBookmark={handleBookmark}></Blog>)
+                    blogs.map((blog) => <Blog handleReadTime={handleReadTime} blog={blog} key={blog.id} handleBookmark={handleBookmark}></Blog>)
                 }
             </section>
-            <Sidebar bookmarks={bookmarks}></Sidebar>
+            <Sidebar bookmarks={bookmarks} readTime={readTime}></Sidebar>
         </main>
     );
 };

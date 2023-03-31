@@ -3,6 +3,7 @@ import React from 'react';
 const Blog = (props) => {
     const {avatar, thumbnail, title, author, published_in,read_time,link} = props.blog;
     const handleBookmark = props.handleBookmark;
+    const handleReadTime = props.handleReadTime;
     return (
         <>
         <article>
@@ -31,8 +32,8 @@ const Blog = (props) => {
                 </div>
                 <h1 className='mb-5 text-4xl font-bold text-cyan-950'>{title}</h1>
                 <div className='flex justify-start gap-5 mb-9'>
-                    <button className='underline decoration-solid text-[#6047EC] text-xl font-semibold'>Mark as read</button>
-                    <a href={link} className=' bg-cyan-700 text-sm font-bold rounded-md py-2 px-3 text-white'>Read More...
+                    <button onClick={()=>handleReadTime(read_time)} className='underline decoration-solid text-[#6047EC] text-xl font-semibold'>Mark as read</button>
+                    <a href={link} target='_blank' className=' bg-cyan-700 text-sm font-bold rounded-md py-2 px-4 text-white'>Read
                     </a>
                 </div>
             </div>
