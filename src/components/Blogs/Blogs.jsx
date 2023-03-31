@@ -36,8 +36,8 @@ const Blogs = () => {
         .then(data => setBlogs(data));
     },[]);
     return (
-        <main className='xl:px-10 container mx-auto grid grid-cols-1 md:grid-cols-11 gap-7'>
-            <section className='col-span-7'>
+        <main className='px-2 xl:px-10 container mx-auto grid grid-cols-1 md:grid-cols-11 gap-7'>
+            <section className='md:col-span-7'>
                 {
                     blogs.map((blog) => <Blog handleReadTime={handleReadTime} blog={blog} key={blog.id} handleBookmark={handleBookmark}></Blog>)
                 }
