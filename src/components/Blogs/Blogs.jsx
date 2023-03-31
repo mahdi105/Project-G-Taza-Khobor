@@ -22,9 +22,7 @@ const Blogs = () => {
         }else{
             notify();
         }
-        
     }
-    console.log(bookmarks);
     // USE EFFECT Hook
     useEffect(()=>{
         fetch('blogs.json')
